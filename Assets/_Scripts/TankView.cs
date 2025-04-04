@@ -7,6 +7,7 @@ namespace _Scripts
     public class TankView : MonoBehaviour
     {
         [SerializeField]private Rigidbody rb;
+        [SerializeField]MeshRenderer[] meshRenderers;
         public Rigidbody Rb
         {
             get
@@ -58,6 +59,14 @@ namespace _Scripts
             if (rotation != 0)
             {
                 _tankController.RotateTank(rotation,_tankController.TankModel.RotationSpeed);
+            }
+        }
+
+        public void Changercolor(Color color)
+        {
+            foreach (var var in meshRenderers)
+            {
+                var.material.color= color;
             }
         }
     }

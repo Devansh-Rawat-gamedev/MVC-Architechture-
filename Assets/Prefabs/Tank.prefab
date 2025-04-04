@@ -257,6 +257,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
+  meshRenderers:
+  - {fileID: 2255778735478331917}
+  - {fileID: 4039305060203073775}
+  - {fileID: 7779097183776606279}
+  - {fileID: 4422573062709689491}
   movement: 0
   rotation: 0
 --- !u!54 &-6910790831389480557

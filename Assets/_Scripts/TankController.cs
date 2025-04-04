@@ -15,7 +15,7 @@ namespace _Scripts
             _rb = _tankView.Rb;
             TankModel.TankController = this;
             _tankView.TankController = this;
-            
+            _tankView.Changercolor(TankModel.Color);
         }
 
         public void MoveTank(float movement, float movementSpeed)

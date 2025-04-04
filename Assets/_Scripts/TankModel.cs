@@ -5,6 +5,7 @@ namespace _Scripts
     public class TankModel
     {
         private TankController _tankController;
+
         public TankController TankController
         {
             get => _tankController;
@@ -14,18 +15,20 @@ namespace _Scripts
                 {
                     throw new System.Exception("TankController already set");
                 }
+
                 _tankController = value;
             }
         }
-        
+
         public readonly float MovementSpeed;
         public readonly float RotationSpeed;
-        
-        public TankModel(float movementSpeed, float rotationSpeed)
+        public readonly Color Color;
+
+        public TankModel(TankSpawner.Tank tank)
         {
-            MovementSpeed = movementSpeed;
-            RotationSpeed = rotationSpeed;
+            MovementSpeed = tank.movementSpeed;
+            RotationSpeed = tank.rotationSpeed;
+            Color= tank.color;
         }
-        
     }
 }
