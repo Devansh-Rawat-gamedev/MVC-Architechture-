@@ -19,12 +19,11 @@ namespace _Scripts
 
         void Start()
         {
-            CreateTank();
         }
 
-        void CreateTank()
+        public void CreateTank(TankTypes tankType)
         {
-            TankModel tankModel = new (tanks[0]);
+            TankModel tankModel = new (tanks[(int)tankType]);
             TankController tankController = new (tankModel, tankView);
         
         }
