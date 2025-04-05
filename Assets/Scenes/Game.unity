@@ -578,7 +578,7 @@ MonoBehaviour:
   tanks:
   - tankType: 0
     movementSpeed: 10
-    rotationSpeed: 10
+    rotationSpeed: 50
     color: {r: 0.45459673, g: 1, b: 0.33773577, a: 1}
   - tankType: 1
     movementSpeed: 5
